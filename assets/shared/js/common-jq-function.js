@@ -1,0 +1,2 @@
+//$.noConflict();
+// JavaScript Document

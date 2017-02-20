@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'ds-digitalnormal';
+    src: url('../font/ds-digi-webfont.eot');
+    src: url('../font/ds-digi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ds-digi-webfont.woff2') format('woff2'),
+         url('../font/ds-digi-webfont.woff') format('woff'),
+         url('../font/ds-digi-webfont.ttf') format('truetype'),
+         url('../font/ds-digi-webfont.svg#ds-digitalnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* jQuery Countdown styles 2.0.0. */
+.is-countdown {
+	border: 1px solid #ccc;
+	background-color: #eee;
+}
+.countdown-rtl {
+	direction: rtl;
+}
+.countdown-holding span {
+	color: #888;
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px;
+	text-align: center;
+}
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+.countdown-section {
+	display: block;
+/*	float: left;*/
+	font-size: 75%;
+	text-align: center;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+
+#defaultCountdownwrp{
+	position: absolute;
+	left: 465px;
+	top: 10px;
+	background-color: transparent;
+	border: none;
+	text-align: center;
+    width: 115px;
+}
+#defaultCountdownwrp .countdown-section{
+	display: inline-block;
+	width: auto;
+	padding: 0 5px;
+	color: #fff;
+}
+#defaultCountdown .countdown-holding span{
+	color: #bbb;
+}
+#defaultCountdown{
+	background-color: transparent;
+	border: none;
+	font-family: 'ds-digitalnormal';
+}
+#defaultCountdownwrp .countdown-section{
+	display: inline-block;	
+	width: 35px;
+}
+#defaultCountdown .countdown-row{
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+#defaultCountdown .countdown-row .countdown-amount{
+	display: block;
+	overflow: hidden;	
+	line-height: 37px;
+	font-size: 35px;
+	text-align: center;
+}
+#defaultCountdown .countdown-row .countdown-period{
+	display: none;
+	overflow: hidden;
+	font-size: 10px;
+	line-height: 13px;
+	text-align: center;
+	margin-top: -5px;
+}
+.timerollbar{
+	height: 5px;
+	background-color: #090C26;
+	display: block;
+	border: 1px solid #3466AF;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 1px;
+	margin-top: 7px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#defaultCountdownwrp h6{
+	display: block;
+	text-align: center;
+	font-weight: 400;
+	color: #BFEFFC;
+	background-color: transparent;
+	font-style: italic;
+	font-size: 11px;
+}
+.timerollbar .progress{
+	height: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	display: block;
+	background-color: #A9D54D;	
+	width: 100%;
+	position: relative;
+}
+.timerollbar .progress{
+}
+.timerollbar.inactive{
+	background: #999;
+	box-shadow: 0 0 0 1px #090C26 inset;
+}
+.timerollbar .progress .progress-bar{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #090C26;
+}

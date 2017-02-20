@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0
+}
+#text {
+	margin: 50px auto;
+	width: 500px
+}
+.hotspot {
+	color: #900;
+	padding-bottom: 1px;
+	cursor: pointer;
+}
+.hotspot{
+    color: #990000;
+    cursor: pointer;
+    padding-bottom: 1px;
+    position: absolute;
+    /*right: -17px;*/
+	left:61.8%;
+    top: 6px;
+}
+.first_sec .tooltips_div .hotspot{
+	left:77%;
+}
+.thrd_sec .hotspot{
+	left:0;
+    top: auto;
+	bottom: 22px;
+}
+#tt {
+	position: absolute;
+	display: block;
+/*	margin-left:-320px;*/
+	margin-left:-150px;
+	width:320px !important;
+/*	background: url(images/tt_left.gif) top left no-repeatbackground: url(images/tt_left.gif) top left no-repeat*/
+}
+#tt.small {
+	position: absolute;
+	display: block;
+	margin-left:0;
+	width:auto !important;
+/*	background: url(images/tt_left.gif) top left no-repeat*/
+}
+#tttop {
+	display: block;
+	height: 5px;
+	margin-left: 5px;
+/*	background: url(images/tt_top.gif) top right no-repeat;*/
+	overflow: hidden
+}
+#ttcont {
+	display: block;
+	padding: 10px;
+	margin-left: 5px;
+	font-size:11px;
+	line-height:14px;
+	font-weight:normal;
+	background:#fff;
+	color:#0077a3;
+	border:1px solid #b4e1eb;	
+	-webkit-box-shadow:  0px 0px 5px 1px #C1E9F2;
+    box-shadow:  0px 0px 5px 1px #C1E9F2;
+	-moz-box-shadow:  0px 0px 5px 1px #C1E9F2;
+}
+#ttcont h6{
+	font-size:11px;
+	color:red;
+	background-color:#0077a3;
+	display:block;
+	padding:4px;
+	line-height:13px;
+	color:#fff;
+	width:auto;
+	display:block;
+	clear:both;
+	margin-bottom:5px;
+}
+#ttbot {
+	display: block;
+	height: 5px;
+	margin-left: 5px;
+/*	background: url(images/tt_bottom.gif) top right no-repeat;*/
+	overflow: hidden
+}

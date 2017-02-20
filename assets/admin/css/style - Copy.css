@@ -1,0 +1,186 @@
+*{
+	padding:0;
+	margin:0;
+	outline:none;
+	border:none;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style-type:none;
+}
+body{
+	font-size:large;
+	line-height:16px;
+	font-size:12px;
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/bg.gif) repeat-x #fff 0 0 ;
+}
+.spacer{
+	clear:both;
+	font-size:inherit;
+	height:0;
+	line-height:0;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+/*----------------- generals end -------------------*/
+
+.wrapper{
+	width:980px;
+	overflow:hidden;
+	margin:0 auto;
+	padding:10px;
+	background:#fff;
+}
+.header{
+	height:100px;
+	background:#039;
+}
+h1{
+	font-size:30px;
+	line-height:100px;
+	color:#fff;
+	text-align:center;
+}
+.login_panel{
+	width:400px;
+	
+	overflow:hidden;
+	border:1px solid #ddd;
+	margin:0 auto;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.login_panel fieldset{
+	padding:20px;
+	background:#eaeaea;
+	border:3px solid #fff;
+}
+.login_panel p{
+	padding:5px 0;
+	overflow:hidden;
+}
+.login_panel label{
+	width:130px;
+	display:block;
+	float:left;
+	font-size:14px;
+	line-height:30px;
+	height:30px;
+}
+
+.login_panel input[type=text],.login_panel input[type=password], .login_panel select{
+	width:200px;
+	padding:0 5px;
+	line-height:30px;
+	height:30px;
+	border:1px solid #ddd;
+	float:left;
+}
+.login_panel select{
+	width:212px;
+	padding:5px;
+	line-height:20px;
+	height:32px;
+}
+.login_panel input[type=submit]{
+	padding:5px 10px;
+	border:1px solid #ddd;
+	background:#333;
+	color:#fff;
+}
+
+/*------------mainleftpanel--------------*/
+.mainleftpanel{
+	width:255px;
+	overflow:hidden;
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+.mainrigthpanel{
+	width:700px;
+	margin-top:10px;
+	overflow:hidden;
+	padding:10px;
+	padding-bottom:0;
+	padding-right:0;
+	border:1px solid #ddd;
+}
+.mainrigthpanel .box{
+	width:128px;
+	height:128px;
+	border:#ddd 1px solid;
+	float:left;
+	margin:0 10px 10px 0;
+}
+
+.nav{
+}
+.nav li{
+	display:block;
+	margin:0 0 5px 0;
+}
+.nav li a{
+	display:block;
+	line-height:15px;
+	padding:5px;
+	color:#333;
+	background:#eaeaea;
+	border:1px solid #ddd;
+}
+.nav li a:hover,.nav li a.active{
+	background:#333;
+	color:#fff;
+	border:1px solid #000;
+}
+.footer{
+	background:#666;
+	padding:10px;
+	color:#fff;
+	overflow:hidden;
+	border:1px solid #ddd;
+	text-align:center;
+}
+
+/*---------footermenu---------*/
+.footermenu{
+	display:inline;
+}
+.footermenu li{
+	display:inline;
+	color:#ddd;
+}
+.footermenu li a{
+	color:#ddd;
+}
+.footermenu li a:hover{
+	color:#fff;
+}
+
+
+/*---------------agencyapplication-----------------*/
+.agencyapplication{
+	overflow:hidden;
+	padding:20px;
+}
+.agencyapplication h2{
+	display:block;
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	line-height:22px;
+}
+.agencyapplication label{
+	width:200px;
+	text-align:right;
+	padding-right:20px;
+}
+.agencyapplication 

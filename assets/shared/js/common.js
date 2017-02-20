@@ -1,0 +1,2 @@
+// JavaScript Document
+function showpopup(hoveritem){var hp=document.getElementById("hoverpopup");var maintable=document.getElementById("maintable");hp.style.top=hoveritem.offsetTop+maintable.offsetTop+10;hp.style.left=hoveritem.offsetLeft+maintable.offsetTop+ -40;hp.style.visibility="Visible"}function Keeppopup(hoveritem){hp=document.getElementById("hoverpopup");hp.style.top=hoveritem.offsetTop;hp.style.left=hoveritem.offsetLeft;hp.style.visibility="Visible"}function Hidepopup(){hp=document.getElementById("hoverpopup");hp.style.visibility="Hidden"}

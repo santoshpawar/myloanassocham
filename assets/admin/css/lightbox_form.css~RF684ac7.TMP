@@ -1,0 +1,30 @@
+fieldset input[type=text], .block input[type=text], fieldset span.selectwrapper, .block textarea, fieldset textarea, fieldset input[type=file]{
+    background: url(<PATH_IMG>textboxgrad.png) repeat-x scroll 0 -10px #FFFFFF;
+	width:230px;
+}
+.prevbutton, .nextbutton, .reset_bt, .submit_bt{
+	background:url(<PATH_IMG>textboxgrad.png) repeat-x scroll 0 0 transparent;
+}
+.select_icon {
+    background: url(<PATH_IMG>arrowselect.png) no-repeat scroll 50% 50%;
+}
+fieldset p {
+	width:230px;
+	position:relative;
+}
+fieldset select{
+	width:230px;
+}
+fieldset span.selectwrapper{
+	width:214px;
+	*width:224px;
+}
+fieldset label.error{
+	color: #FF0000;
+    font-size: 12px;
+    padding: 7px 0 0;
+	position:absolute;
+	left:235px;
+	top:0;
+	width:200px;
+}

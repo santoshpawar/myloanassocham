@@ -1,0 +1,7 @@
+fieldset input[type=text], .block input[type=text], fieldset span.selectwrapper, .block textarea, fieldset textarea, fieldset input[type=file]{
+    background: url(<PATH_IMG>textboxgrad.png) repeat-x scroll 0 -10px #FFFFFF;
+	width:300px;
+}
+.prevbutton, .nextbutton, .reset_bt, .submit_bt{
+	background:url(<PATH_IMG>textboxgrad.png) repeat-x scroll 0 0 transparent;
+}

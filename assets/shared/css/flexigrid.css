@@ -1,0 +1,694 @@
+@charset "UTF-8";
+.flexigrid {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	position:static;
+	border:0px solid #eee;
+	overflow:visible;
+	color:#025266;
+}
+.flexigrid a{
+	color:#003D4C;
+	background-color:transparent;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.flexigrid a:hover{
+	text-decoration:none;
+}
+.flexigrid.hideBody {
+	height:26px !important;
+	border-bottom:1px solid #ccc
+}
+.ie6fullwidthbug {
+	border-right:0px solid #ccc;
+	padding-right:2px
+}
+.flexigrid div.nDiv {
+	background:#eee url(<PATH_IMG>flexigrid/line.gif) repeat-y -1px top;
+	border:1px solid #ccc;
+	border-top:0px;
+	overflow:auto;
+	left:0px;
+	position:absolute;
+	z-index:999;
+	float:left;
+	height:auto !important;
+	width:auto !important;
+}
+.flexigrid div.nDiv table {
+	margin:2px
+}
+.flexigrid div.hDivBox {
+	display: block;
+    float: left;
+    padding-right: 0;
+    width: 100%;
+}
+.flexigrid div.bDiv table {
+	/*margin-bottom:10px;*/
+}
+.flexigrid div.bDiv table.autoht {
+	border-bottom:0px;
+	margin-bottom:0px
+}
+.flexigrid div.nDiv td {
+	padding:2px 3px;
+	border:1px solid #eee;
+	cursor:default
+}
+.flexigrid div.nDiv tr:hover td, .flexigrid div.nDiv tr.ndcolover td {
+	background:#d5effc url(<PATH_IMG>flexigrid/hl.png) repeat-x top;
+	border:1px solid #a8d8eb
+}
+.flexigrid div.nDiv td.ndcol1 {
+	border-right:1px solid #ccc
+}
+.flexigrid div.nDiv td.ndcol2 {
+	border-left:1px solid #fff;
+	padding-right:10px
+}
+.flexigrid div.nDiv tr:hover td.ndcol1, .flexigrid div.nDiv tr.ndcolover td.ndcol1 {
+	border-right:1px solid #d2e3ec
+}
+.flexigrid div.nDiv tr:hover td.ndcol2, .flexigrid div.nDiv tr.ndcolover td.ndcol2 {
+	border-left:1px solid #eef8ff
+}
+.flexigrid div.nBtn {
+	position:absolute;
+	height:25px;
+	width:14px;
+	z-index:900;
+	background:#fafafa url(<PATH_IMG>flexigrid/fhbg.gif) repeat-x bottom;
+	border:0px solid #ccc;
+	border-left:1px solid #ccc;
+	top:0px;
+	left:0px;
+	margin-top:1px;
+	cursor:pointer;
+	display:none
+}
+.flexigrid div.nBtn div {
+	height:24px;
+	width:12px;
+	border-left:1px solid #fff;
+	float:left;
+	background:url(<PATH_IMG>flexigrid/ddn.png) no-repeat center
+}
+.flexigrid div.nBtn.srtd {
+	background:url(<PATH_IMG>flexigrid/wbg.gif) repeat-x 0px -1px
+}
+.flexigrid div.mDiv {
+	/*background:url(<PATH_IMG>flexigrid/wbg.gif) repeat-x top;*/
+	color:#fff;
+	background-color:#007396;
+	border:5px solid #BFEFFC;
+	border-width:5px 0 5px 0;
+	padding:3px 10px;
+	display:block;
+	height:30px;
+	font-size:18px;
+	line-height:30px;
+	/*margin-bottom:10px;*/
+	position:relative
+}
+.flexigrid div.mDiv div {
+	/*padding:6px;*/
+	white-space:nowrap
+}
+.flexigrid div.mDiv div.ptogtitle {
+	position:absolute;
+	top:9px;
+	right:5px;
+	padding:0px;
+	height:16px;
+	width:16px;
+	overflow:hidden;
+	border:1px solid #ccc;
+	cursor:pointer;
+	background:#ccc;
+	display:none;
+}
+.flexigrid div.mDiv div.ptogtitle:hover {
+	background-position:left -2px;
+	border-color:#bbb
+}
+.flexigrid div.mDiv div.ptogtitle span {
+	display:block;
+	border-left:1px solid #eee;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ddd;
+	width:14px;
+	height:14px;
+	background:url(<PATH_IMG>flexigrid/uup.png) no-repeat center
+}
+.flexigrid div.mDiv div.ptogtitle.vsble span {
+	background:url(<PATH_IMG>flexigrid/ddn.png) no-repeat center
+}
+.flexigrid div.tDiv {
+	/*background:#fafafa url(<PATH_IMG>flexigrid/bg.gif) repeat-x top;*/
+	
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 50%, #efefef 51%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f7f7f7), color-stop(51%,#efefef), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+	
+	position:relative;
+	border:1px solid #ccc;
+	border-bottom:0px;
+	overflow:hidden;
+	border-bottom:none;
+}
+.flexigrid div.tDiv2 {
+	float:left;
+	clear:both;
+	padding:1px
+}
+.flexigrid div.sDiv {
+	background:#fafafa url(<PATH_IMG>flexigrid/bg.gif) repeat-x top;
+	position:relative;
+	border:1px solid #ccc;
+	border-top:0px;
+	overflow:hidden;
+	display:none
+}
+.flexigrid div.sDiv2, .flexigrid div.sDiv3 {
+	float:left;
+	clear:both;
+	padding:5px;
+	padding-left:5px;
+	width:100%
+}
+.flexigrid div.sDiv2 input, .flexigrid div.sDiv2 select {
+	vertical-align:middle
+}
+.flexigrid div.btnseparator {
+	float:left;
+	height:24px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #fff;
+	margin:1px
+}
+.flexigrid div.fbutton, div.fbutton {
+	float:left;
+	display:block;
+	cursor:pointer;
+	padding:1px
+}
+.flexigrid div.fbutton div, div.fbutton div {
+	float:left;
+	padding:1px 3px
+}
+.flexigrid div.fbutton span, div.fbutton span {
+	float:left;
+	display:block;
+	padding:3px
+}
+.flexigrid div.fbutton:hover, .flexigrid div.fbutton.fbOver, div.fbutton:hover {
+	padding:0px;
+	border:1px solid #ccc
+}
+.flexigrid div.fbutton:hover div, .flexigrid div.fbutton.fbOver div, div.fbutton:hover div {
+	padding:0px 2px;
+	border-left:1px solid #fff;
+	border-top:1px solid #fff;
+	border-right:1px solid #eee;
+	border-bottom:1px solid #eee
+}
+.flexigrid div.hDiv {
+	/*background:#fafafa url(<PATH_IMG>flexigrid/fhbg.gif) repeat-x bottom;*/
+	position:relative;
+	border:none;
+	border-bottom:0px;
+	overflow:hidden;
+	/*border-top:4px solid #BFEFFC;
+	border-bottom:4px solid #BFEFFC;*/
+	padding-left:1px;
+	border-top:1px solid #0581AE;
+	background: #25a9d1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #25a9d1 0%, #007ba8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25a9d1), color-stop(100%,#007ba8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #25a9d1 0%,#007ba8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #25a9d1 0%,#007ba8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #25a9d1 0%,#007ba8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #25a9d1 0%,#007ba8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25a9d1', endColorstr='#007ba8',GradientType=0 ); /* IE6-9 */
+
+}
+.flexigrid div.hDiv table {
+	/*border-right:1px solid #fff*/
+}
+.flexigrid div.cDrag {
+	float:left;
+	position:absolute;
+	z-index:2;
+	overflow:visible
+}
+.flexigrid div.cDrag div {
+	float:left;
+	background:none;
+	display:block;
+	position:absolute;
+	height:24px;
+	width:5px;
+	cursor:col-resize
+}
+.flexigrid div.cDrag div:hover, .flexigrid div.cDrag div.dragging {
+	background:url(<PATH_IMG>flexigrid/line.gif) repeat-y 2px center
+}
+.flexigrid div.iDiv {
+	border:1px solid #316ac5;
+	position:absolute;
+	overflow:visible;
+	background:none
+}
+.flexigrid div.iDiv input, .flexigrid div.iDiv select, .flexigrid div.iDiv textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px
+}
+.flexigrid div.iDiv input.tb {
+	border:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	padding:0px;
+	background:none
+}
+.flexigrid div.bDiv {
+	border:1px solid #ccc;
+	border-top:0px;
+	background:#fff;
+	/*overflow:auto;*/
+	/*overflow:scroll;*/
+	position:relative;
+	height:auto !important;
+}
+.flexigrid div.bDiv table {
+	/*border-bottom:1px solid #ccc*/
+}
+.flexigrid div.hGrip {
+	position:absolute;
+	top:0px;
+	right:0px;
+	height:5px;
+	width:5px;
+	background:url(<PATH_IMG>flexigrid/line.gif) repeat-x center;
+	margin-right:1px;
+	cursor:col-resize;
+	display:none;
+}
+.flexigrid div.hGrip:hover, .flexigrid div.hGrip.hgOver {
+	border-right:1px solid #999;
+	margin-right:0px
+}
+.flexigrid div.vGrip {
+	height:5px;
+	overflow:hidden;
+	position:relative;
+	background:#fafafa url(<PATH_IMG>flexigrid/wbg.gif) repeat-x 0px -1px;
+	border:1px solid #ccc;
+	border-top:0px;
+	text-align:center;
+	cursor:row-resize;
+	display:none;
+}
+.flexigrid div.vGrip span {
+	display:block;
+	margin:1px auto;
+	width:20px;
+	height:1px;
+	overflow:hidden;
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+	background:none
+}
+.flexigrid div.hDiv th{
+	border:none;
+	padding:0 0 0 0;
+	color:#fff;
+	border-right:1px solid #1289AA;	
+}
+.flexigrid div.hDiv th div{
+	border-right:1px solid #22A5CD;
+}
+.flexigrid div.bDiv td {
+	text-align:left;
+	padding:0 1px;
+/*	border-right:1px solid #ddd;
+	border-left:1px solid #fff;*/
+	/*overflow:hidden*/
+}
+.flexigrid div.hDiv th div, .flexigrid div.bDiv td div, div.colCopy div {
+	padding:5px;
+	border-left:0px solid #fff
+}
+.flexigrid div.hDiv th, div.colCopy {
+	font-weight:normal;
+	height:24px;
+	cursor:default;
+	/*white-space:nowrap;*/
+	overflow:hidden
+}
+div.colCopy {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	background:#fafafa url(<PATH_IMG>flexigrid/fhbg.gif) repeat-x bottom;
+	border:1px solid #ccc;
+	border-bottom:0px;
+	overflow:hidden
+}
+.flexigrid div.hDiv th.sorted {
+	background:url(<PATH_IMG>flexigrid/wbg.gif) repeat-x 0px -1px;
+	border-bottom:0px solid #ccc
+}
+.flexigrid div.hDiv th.thOver {
+}
+.flexigrid div.hDiv th.thOver div, .flexigrid div.hDiv th.sorted.thOver div {
+	/*border-bottom:1px solid orange;*/
+	padding-bottom:4px
+}
+.flexigrid div.hDiv th.sorted div {
+	border-bottom:0px solid #ccc;
+	padding-bottom:5px
+}
+.flexigrid div.hDiv th.thMove {
+	background:#fff;
+	color:#fff
+}
+.flexigrid div.hDiv th.sorted.thMove div {
+	border-bottom:1px solid #fff;
+	padding-bottom:4px
+}
+.flexigrid div.hDiv th.thMove div {
+	background:#fff !important
+}
+.flexigrid div.hDiv th div.sdesc {
+	background:url(<PATH_IMG>flexigrid/dn.png) no-repeat center top
+}
+.flexigrid div.hDiv th div.sasc {
+	background:url(<PATH_IMG>flexigrid/up.png) no-repeat center top
+}
+.flexigrid div.bDiv td {
+	border-bottom:1px solid #fff;
+	vertical-align:top;
+	/*white-space:nowrap;*/
+	vertical-align:middle;
+}
+.flexigrid div.bDiv table tbody, .flexigrid div.hDiv table tbody{
+	width:98% !important;
+}
+.flexigrid div.hDiv th div {
+}
+.flexigrid span.cdropleft {
+	display:block;
+	background:url(<PATH_IMG>flexigrid/prev.gif) no-repeat -4px center;
+	width:24px;
+	height:24px;
+	position:relative;
+	top:-24px;
+	margin-bottom:-24px;
+	z-index:3
+}
+.flexigrid div.hDiv span.cdropright {
+	display:block;
+	background:url(<PATH_IMG>flexigrid/next.gif) no-repeat 12px center;
+	width:24px;
+	height:24px;
+	float:right;
+	position:relative;
+	top:-24px;
+	margin-bottom:-24px
+}
+.flexigrid div.bDiv td div {
+	border-top:0px solid #fff;
+	padding-bottom:4px;
+	display:block;
+	/*width:100%;*/
+	word-wrap:break-word;
+	-moz-word-wrap:break-word;
+	-webkit-word-wrap:break-word;
+}
+.flexigrid tr td.sorted {
+	background:#f3f3f3;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #f3f3f3
+}
+.flexigrid tr td.sorted div {
+}
+.flexigrid tr.erow td {
+	background:#f7f7f7;
+	border-bottom:1px solid #f7f7f7
+}
+.flexigrid tr.erow td.sorted {
+	background:#e3e3e3;
+	border-bottom:1px solid #e3e3e3
+}
+.flexigrid tr.erow td.sorted div {
+}
+.flexigrid div.bDiv tr:hover td, .flexigrid div.bDiv tr:hover td.sorted, .flexigrid div.bDiv tr.trOver td.sorted, .flexigrid div.bDiv tr.trOver td {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffe5e5+0,ff8e8e+100 */
+background: rgb(255,229,229); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,229,229,1) 0%, rgba(255,142,142,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,229,229,1)), color-stop(100%,rgba(255,142,142,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe5e5', endColorstr='#ff8e8e',GradientType=0 ); /* IE6-9 */
+
+}
+.flexigrid div.bDiv tr.trSelected:hover td, .flexigrid div.bDiv tr.trSelected:hover td.sorted, .flexigrid div.bDiv tr.trOver.trSelected td.sorted, .flexigrid div.bDiv tr.trOver.trSelected td, .flexigrid tr.trSelected td.sorted, .flexigrid tr.trSelected td {
+	background: rgb(255,229,229) !important; /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,229,229,1) 0%, rgba(255,142,142,1) 100%) !important; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,229,229,1)), color-stop(100%,rgba(255,142,142,1))) !important; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%) !important; /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%) !important; /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,229,229,1) 0%,rgba(255,142,142,1) 100%) !important; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe5e5', endColorstr='#ff8e8e',GradientType=0 ) !important; /* IE6-9 */
+}
+.flexigrid tr.trSelected td.sorted a, .flexigrid tr.trSelected td a {
+	color:#19678E;
+}
+.flexigrid.novstripe .bDiv table {
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc
+}
+.flexigrid.novstripe div.bDiv td {
+	border-right-color:#fff
+}
+.flexigrid.novstripe div.bDiv tr.erow td.sorted {
+	border-right-color:#e3e3e3
+}
+.flexigrid.novstripe div.bDiv tr td.sorted {
+	border-right-color:#f3f3f3
+}
+.flexigrid.novstripe div.bDiv tr.erow td {
+	border-right-color:#f7f7f7;
+	border-left-color:#f7f7f7
+}
+.flexigrid.novstripe div.bDiv tr.trSelected:hover td, .flexigrid.novstripe div.bDiv tr.trSelected:hover td.sorted, .flexigrid.novstripe div.bDiv tr.trOver.trSelected td.sorted, .flexigrid.novstripe div.bDiv tr.trOver.trSelected td, .flexigrid.novstripe tr.trSelected td.sorted, .flexigrid.novstripe tr.trSelected td {
+	border-right:1px solid #06F;
+	border-left:1px solid #06F
+}
+.flexigrid.novstripe div.bDiv tr.trOver td, .flexigrid.novstripe div.bDiv tr:hover td {
+	border-left-color:#d9ebf5;
+	border-right-color:#d9ebf5
+}
+.flexigrid div.pDiv {
+	/*background:url(<PATH_IMG>flexigrid/wbg.gif) repeat-x 0 -1px;*/
+	
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 50%, #efefef 51%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f7f7f7), color-stop(51%,#efefef), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 50%,#efefef 51%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	
+	border:1px solid #ccc;
+	border-top:0px;
+	overflow:hidden;
+	white-space:nowrap
+}
+.flexigrid div.pDiv div.pDiv2 {
+	margin:3px;
+	margin-left:-2px;
+	float:left;
+	width:1024px
+}
+div.pGroup {
+	float:left;
+	background:none;
+	height:24px;
+	margin:0px 5px
+}
+.flexigrid div.pDiv .pPageStat, .flexigrid div.pDiv .pcontrol {
+	position:relative;
+	top:5px;
+	overflow:visible
+}
+.flexigrid div.pDiv input {
+	vertical-align:text-top;
+	position:relative;
+	top:-5px
+}
+.flexigrid div.pDiv div.pButton {
+	float:left;
+	width:22px;
+	height:22px;
+	border:0px;
+	cursor:pointer;
+	overflow:hidden
+}
+.flexigrid div.pDiv div.pButton:hover, .flexigrid div.pDiv div.pButton.pBtnOver {
+	width:20px;
+	height:20px;
+	border:1px solid #ccc;
+	cursor:pointer
+}
+.flexigrid div.pDiv div.pButton span {
+	width:20px;
+	height:20px;
+	display:block;
+	float:left
+}
+.flexigrid div.pDiv div.pButton:hover span, .flexigrid div.pDiv div.pButton.pBtnOver span {
+	width:19px;
+	height:19px;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff
+}
+.flexigrid .pSearch {
+	background:url(<PATH_IMG>flexigrid/magnifier.png) no-repeat center
+}
+.flexigrid .pFirst {
+	background:url(<PATH_IMG>flexigrid/first.gif) no-repeat center
+}
+.flexigrid .pPrev {
+	background:url(<PATH_IMG>flexigrid/prev.gif) no-repeat center
+}
+.flexigrid .pNext {
+	background:url(<PATH_IMG>flexigrid/next.gif) no-repeat center
+}
+.flexigrid .pLast {
+	background:url(<PATH_IMG>flexigrid/last.gif) no-repeat center
+}
+.flexigrid .pReload {
+	background:url(<PATH_IMG>flexigrid/load.png) no-repeat center
+}
+.flexigrid .pReload.loading {
+	background:url(<PATH_IMG>flexigrid/load.gif) no-repeat center
+}
+.flexigrid.ie div.hDiv th div, .flexigrid.ie div.bDiv td div, div.colCopy.ie div {
+	overflow:hidden
+}
+.flexigrid div.fbutton .add, div.fbutton .add  {
+	background:url(<PATH_IMG>flexigrid/prev.png) no-repeat center left
+}
+.flexigrid div.fbutton .delete {
+	background:url(<PATH_IMG>flexigrid/close.png) no-repeat center left
+}
+.flexigrid .add_search {
+	background:url(<PATH_IMG>flexigrid/add.png) no-repeat center left;
+	cursor:pointer
+}
+.flexigrid .delete_search {
+	background:url(<PATH_IMG>flexigrid/close.png) no-repeat center left;
+	cursor:pointer
+}
+.flexigrid .do_search {
+	background:url(<PATH_IMG>flexigrid/magnifier.png) no-repeat center left;
+	cursor:pointer
+}
+.flexigrid .do_reset {
+	background:url(<PATH_IMG>flexigrid/load.png) no-repeat center left;
+	cursor:pointer
+}
+.flexigrid div.hDiv table, .flexigrid div.hDiv table thead, .flexigrid div.hDiv table thead tr, .flexigrid div.bDiv table, .flexigrid div.bDiv table tbody, .flexigrid div.bDiv table tbody tr{
+	width:100%;
+	display:block;
+}
+.flexigrid div.bDiv table#rates{
+	/*width:2098px;*/
+}
+.mainrigthpanel.group-rates .flexigrid td, .mainrigthpanel.group-rates .flexigrid th{
+	font-size:10px;
+}
+.mainrigthpanel.group-rates .flexigrid div.hDiv th div{
+/*	padding:3px 0;*/
+	height:28px;
+	line-height: 28px;
+}
+.mainrigthpanel.group-rates .flexigrid div.bDiv td div{
+/*	padding:3px 0;*/
+}
+.mainrigthpanel.group-rates .flexigrid div.nBtn{
+	height:38px;
+}
+.mainrigthpanel.group-rates .flexigrid div.nBtn div{
+	height:38px;
+}
+
+.flexigrid tr td{
+	background:#fff;
+}
+.flexigrid tr td:nth-child(even){
+	background:#fbfbfb;
+}
+.flexigrid tr.erow td{
+	background:#e9e9e9;
+}
+.flexigrid tr.erow td:nth-child(even){
+	background:#e2e2e2;
+}
+/*------------edit find section---------*/
+.flexigrid div.sDiv{
+	position:absolute;
+	left:0;
+	top:75px;
+	right:0;
+	z-index:1000;
+}
+.flexigrid div.hDiv{
+	margin-top:100px;
+}
+.flexigrid .add_search, .flexigrid .delete_search{
+	padding-top:1px;
+}
+.flexigrid div.sDiv2 input, .flexigrid div.sDiv2 select, .flexigrid div.sDiv3 select, .flexigrid div.pDiv2 select, .flexigrid div.pDiv2 input[type=text]{
+	height:24px;
+	line-height:18px;
+	padding:2px;
+	border:1px solid #ddd;
+	margin-right:2px;
+	margin-bottom:5px;
+	background:#fff;
+}
+.flexigrid div.sDiv2{
+	padding-top:0;
+}
+.flexigrid div.sDiv2 input, .flexigrid div.pDiv2 input[type=text]{
+	height:22px;
+    border:1px solid #ddd;
+}
+
+.agencypaymentwrp.acctbl div.fbutton{
+	position: absolute;
+	left: 2px;
+	top: 48px;
+}
+.agencypaymentwrp.acctbl .flexigrid div.fbutton .add, .agencypaymentwrp.acctbl div.fbutton .add{
+	background:url(<PATH_IMG>flexigrid/adddisable.png) no-repeat center left;
+	color: #888;
+}
+.agencypaymentwrp.acctbl .flexigrid div.fbutton .add.active_btn, .agencypaymentwrp.acctbl div.fbutton .add.active_btn{
+	background:url(<PATH_IMG>flexigrid/add.png) no-repeat center left;
+	color: #025266;
+}

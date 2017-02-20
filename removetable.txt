@@ -1,0 +1,17 @@
+tbl_user
+
+tbl_loan_application  =application_id , msme_id ,  channel_partner_id
+tbl_loan_requirement  =application_id 
+
+tbl_enterprise_background  =application_id
+tbl_enterprise_profile  =application_id
+tbl_owner_details  =application_id
+tbl_upload_documents  =application_id
+tbl_upload_documents_additional  =upload_ids
+tbl_upload_documents_addmore  =upload_ids
+tbl_upload_documents_owner  =upload_ids
+
+tbl_msme   = uid , channel_parner_id
+
+
+

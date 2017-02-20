@@ -1,0 +1,116 @@
+/* ------ general
+-----------------------------------------------*/
+
+.wrapper {
+margin:20px auto 0;
+width:714px;
+overflow:hidden;
+}
+
+
+.blocks p {
+margin-bottom:10px;
+position:relative;
+}
+
+.btn {
+display:block;
+float:left;
+height:31px;
+line-height:31px;
+padding:0 10px;
+background:url(../gfx/bgbtn.jpg) repeat-x;
+color:#565e62;
+font-weight:bold;
+font-size:11px;
+border:1px solid #e1e0df;
+outline:none;
+}
+
+.text,
+.textarea {
+padding:5px 10px;
+height:27px;
+border:1px solid #ddd;
+color:#000;
+background:url(../gfx/bginput.jpg) repeat-x bottom #fff;
+position:relative;
+z-index:4;
+font-size:14px;
+font-weight:bold;
+}
+
+.text {
+width:166px;
+}
+
+.textarea {
+height:150px;
+width:268px;
+}
+
+.blocks label {
+width:140px;
+line-height:37px;
+text-align:right;
+margin-right:15px;
+font-weight:bold;
+color:#000000;
+font-size:14px;
+z-index:10;
+position:relative;
+}
+
+.blocks label.error,
+.blocks label.ok {
+position:absolute;
+z-index:1;
+top:-4px;
+left:41px;
+padding:5px 15px 5px 280px;
+/*reset label*/
+width:auto;
+text-align:left;
+margin:0;
+background-repeat:no-repeat;
+background-position:257px 16px;
+}
+
+.blocks label.ok {
+background-image:url(../gfx/icook.gif);
+background-color:#FFF;
+color:#577530;
+}
+
+.blocks label.error {
+background-image:url(../gfx/icofail.gif);
+background-color:#FFF;
+color:#c81925;
+}
+
+.area label.ok,
+.area label.error {
+height:163px;
+padding-left:410px;
+background-position:387px 16px;
+}
+
+/* CSS3 */
+.btn,
+.text,
+.textarea,
+.blocks label.error,
+.blocks label.ok { 
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+}
+
+a {
+color: #CCCCCC;
+}
+
+a img {
+border:none;
+}
+

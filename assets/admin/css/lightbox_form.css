@@ -1,0 +1,182 @@
+fieldset input[type=text], fieldset input[type=password], .block input[type=text], fieldset span.selectwrapper, .block textarea, fieldset textarea{
+    background: url(../images/textboxgrad.png) repeat-x scroll 0 -10px #FFFFFF;
+	width:214px;
+	box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+}
+fieldset p.midm{
+	width:117px;
+}
+fieldset p.midm input[type=text]{
+	width:100px;
+}
+.prevbutton, .nextbutton, .reset_bt, .submit_bt{
+	background: url(../images/whitearrowr.png) no-repeat scroll 100% 50% #1c9e00;
+	border-color:#1d720a !important; 
+	padding-left: 15px !important;
+	padding-right: 30px !important;
+}
+.select_icon {
+    background: url(../images/arrowselect.png) no-repeat scroll 50% 50% #fff;
+	right: 3px;
+}
+fieldset p {
+	width:230px;
+	position:relative;
+	display:block;
+	float:left;
+	margin:0;
+}
+fieldset select{
+	width:230px;
+}
+fieldset span.selectwrapper{
+	width:214px;
+	*width:230px;
+	*height:32px;
+}
+fieldset label.error{
+	color: #FF0000;
+    font-size: 0;
+    height: 24px;
+    left: 233px;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    top: 3px;
+    width: 24px;
+	background:url(../images/cross.png) no-repeat 0 10%;
+}
+span.requirederror p{
+	background:url(../images/cross.png) no-repeat 0 50%;
+}
+fieldset textarea{
+	*width:230px;
+}
+fieldset input.text_type{
+	width:214px;
+	padding:0 5px;
+	color:#222;
+	background:url(../images/textboxgrad.png) repeat-x 0 -10px;
+	background-color:#fff;
+	height:26px;
+	line-height:26px;
+	/*border:3px solid #7BC8E0;*/
+	font-size:11px;
+	overflow:hidden;
+	*width:230px;
+	*height:32px;
+	/*-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:content-box;*/
+}
+fieldset input.medium {
+    float: left;
+    width: 184px;
+	*width: 196px;
+}
+fieldset input.find_btn{
+	background:url(../images/find.png) no-repeat 50% 50% #68CEED;
+}
+.submit_bt{
+	float:left;
+}
+
+.middleform {
+	width:48%;
+	overflow:visible;
+	float:left;
+	clear:none;
+}
+.qurterform {
+	width:22%;
+	padding-right:3%;
+	float:left;
+	clear:none;
+}
+fieldset .middleform label, fieldset label{
+    width: 100%;
+	padding-right:0;
+	display:block;
+	clear:left;
+}
+fieldset label{
+	padding:6px 0 2px;	
+}
+input[value=Send], input[value=Submit]{
+	background:url(../images/whitearrowr.png) no-repeat 100% 50% #1c9e00 !important; 
+	padding-left: 15px !important;
+	padding-right: 30px !important;
+	border-color:#1d720a !important;
+}
+input[value=Send].createcomnt, input[value=Create].createcomnt{
+	background-image: url(../images/whiteplus.png) !important;
+	float: right;
+	padding-right: 25px !important;
+	border-color:#1d720a !important;
+}
+form.clm_dtls input[type=submit]{
+	background:url(../images/whitearrowr.png) no-repeat 100% 50% #1c9e00 !important;
+	padding-left: 15px !important;
+	padding-right: 30px !important;
+	border-color:#1d720a !important;
+}
+a.exitbtn.backbtn{
+	background:url(../images/whitearrowl.png) no-repeat 5px 50% #1c9e00 !important;
+	padding-left: 30px !important;
+	padding-right: 15px !important;
+	border-color:#1d720a !important;
+}
+body.main{
+	background:url(../images/bg.jpg) repeat-x fixed #fff 0 0;
+}
+fieldset.bottomskywrapepr legend.login_ico{
+	background:url(../images/login_ico.png) no-repeat 5px 50% #fff;
+}
+input[value=Back].red{
+	padding-left:30px !important;
+	padding-right:15px !important;
+	border-color:#640000; 
+	background:url(../images/whitearrowl.png) no-repeat 5px 50% #b60202 !important; 
+}
+input[value=Back], input[value="Exit Without Saving"]{
+	padding-left:30px !important;
+	padding-right:15px !important;
+	background:url(../images/whitearrowl.png) no-repeat 5px 50% #1c9e00 !important; 
+	border-color:#1d720a !important;
+}
+.forgotpass{
+	background:url(../images/forgotclose.gif) no-repeat 0 50%;
+}
+.header{
+	background:url(../images/headerbg.jpg) no-repeat 0 0;
+}
+
+fieldset .fullwidth label.error{
+	left:102%;
+    top:-2px;
+}
+input[value=Reset]{
+	background:url(../images/whitearrowl.png) no-repeat 5px 50% #1c9e00 !important;
+	padding-left: 30px !important;
+	padding-right: 15px !important;
+	border-color:#1d720a !important;
+}
+input[value=Add]{
+	background:url(../images/whitearrowr.png) no-repeat 100% 50% #1c9e00; 
+	padding-left: 15px !important;
+	padding-right: 30px !important;
+	border-color:#1d720a !important;
+}
+
+
+fieldset.additionalemail input[type=text]{
+	width: 324px;
+}
+fieldset.additionalemail p{
+	width: 340px;
+}
+form#customTermForm fieldset input.text_type{
+	width:320px; 
+}
